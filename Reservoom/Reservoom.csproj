@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	  <ApplicationIcon>Resources\Pentagram3.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Pentagram3.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LoadingSpinner.WPF" Version="1.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
